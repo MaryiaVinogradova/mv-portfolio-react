@@ -1,0 +1,31 @@
+.form-container{
+  justify-content: space-around;
+  display:block;
+
+}
+
+.form-values {
+  width: 75%;
+}
+
+.form-holder{
+  justify-content: space-around;
+  display: block;
+}
+
+label,
+#alert-message {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+#submit{
+background-color: rgb(142, 151, 155);
+border: 0;
+}
+
+#contact {
+  /* background: linear-gradient(90deg, rgb(197 241 247) 70%, rgb(255, 255, 255) 100%); */
+  max-width: 75%;
+  padding: 20px;
+}

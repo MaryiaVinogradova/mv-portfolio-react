@@ -1,0 +1,143 @@
+body{
+  background-color: rgb(240 246 196)
+}
+
+.container{
+  justify-content: center;
+  justify-content: center;
+  max-width: 75%;
+
+}
+
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-.5 * var(--bs-gutter-x));
+  margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+
+#top{
+  padding-top: 20px;
+}
+
+#portfolio{
+  display: block;
+  justify-content: center;
+  /* background: linear-gradient(90deg, rgb(197 241 247) 70%, rgb(255, 255, 255) 100%); */
+  max-width: 75%;
+  min-height: 100%;
+  margin-bottom: 0;
+  padding-bottom: 80px;
+  font-family: Helvetica, Arial, sans-serif;
+  min-height: fit-content;
+}
+
+.card{
+  width: 400px;
+  height: fit-content;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+.h-100{
+  max-width: fit-content;
+  margin-top: 20px;
+}
+
+#card-img {
+  width: auto;
+  height: auto;
+}
+
+.portfolio-title {
+  position: absolute;
+  left: 10px;
+  top: 10%;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.card-header{
+  padding: 10px;
+  background-color: #ced4da;
+
+}
+
+.card-footer {
+  padding: 0;
+}
+
+.github-icon {
+  margin-left: 20px;
+  opacity: 0;
+}
+
+.deployed-link {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.tech-used {
+  position: absolute;
+  top: 30%;
+  font-size: 1.5rem;
+  left: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+
+.hover-active {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.8);
+  opacity: 1;
+}
+
+@media (min-width: 972px){
+  .card-header{
+    padding: 10px;
+    background-color: #ced4da;
+    font-size: 1.5rem;
+  
+  }
+
+}
+
+@media (max-width: 972px){
+  .card-header{
+    padding: 10px;
+    background-color: #ced4da;
+    font-size: 1rem;
+  
+  }
+
+}
+
+@media (min-width: 375px){
+  .card-header{
+    padding: 10px;
+    background-color: #ced4da;
+    font-size: 0.8rem;
+  
+  }
+
+}
+
+@media (max-width: 375px){
+  .card-header{
+    padding: 10px;
+    background-color: #ced4da;
+    font-size: 0.8rem;
+  
+  }
+
+}
