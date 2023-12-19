@@ -6,8 +6,6 @@ import Footer from './Footer';
 
 
 const Main = () => {
-
-
   const [content, setContent] = useState("Home")
 
   const handleChange = (content) => {
