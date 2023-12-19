@@ -1,6 +1,9 @@
 import React from 'react';
 import '../styles/Footer.css'
 
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+
 const footerStyle = {
     mainDiv: {
       justifyContent: 'space-around',
@@ -9,10 +12,8 @@ const footerStyle = {
   },
     anchors: {
       color: '#8e979b',
-      textAlign: 'center',
       padding: 0,
-      margin: 10,
-      alignItems: 'top',
+      margin: 0
   }
 }
 
@@ -21,24 +22,25 @@ function Footer() {
   <footer >
   <div class="container center">  
   
-    <div class=""> 
+    <div> 
       <div style={footerStyle.mainDiv}>
-        <ul class="navbar navbar flex-row align-items-top" id="p-0">
+        <ul class="navbar navbar flex-row align-items-top">
   
-        <li class="b-nav-item ">
-        <a style={footerStyle.anchors} className="link " href="https://github.com/MaryiaVinogradova" target="_blank "><i className="bi bi-github" id="icon"></i></a>
+        <li class="b-nav-item">
+        <a style={footerStyle.anchors} className="link " href="https://github.com/MaryiaVinogradova" target="_blank "><i className="bi m-0" id="icon">
+          <FaGithub></FaGithub></i></a>
         </li>  
   
-        <li class="b-nav-item ">
-        <a style={footerStyle.anchors} className="link" href="https://www.linkedin.com/in/maryiavinogradova/"
-                target="_blank "><i className="bi bi-linkedin" id="icon"></i></a>
+        <li class="b-nav-item">
+        <a style={footerStyle.anchors} className="link" href="https://www.linkedin.com/in/maryiavinogradova/" target="_blank "><i className="bi m-0" id="icon">
+            <FaLinkedinIn></FaLinkedinIn></i></a>
         </li>
-  
         </ul>
-        <div>
-        <a style={footerStyle.anchors}>p: +1(612) 423 9278</a>
-    
+
+        <div style={footerStyle.anchors}>
+         p: +1(612) 423 9278
         </div>
+
         </div>
     </div> 
   </div>    
