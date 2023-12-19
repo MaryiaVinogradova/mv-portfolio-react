@@ -53,22 +53,13 @@ function Contact() {
             return <div id="alert-message">Please enter a valid email</div>
         } else if (name !== "" && validEmail && message === "") {
             return <div id="alert-message">Please enter a valid message</div>
-        } else {
-            <div id="alert-message"></div>
-        }
-
+        } 
 
     };
 
-
-
-
     return (
-        <div id="contact" className="container">
-
-
+        <div className="container p-0 m-0" id="contact">
             <form>
-                <h2>Contact</h2>
                 
              <div class="form-container">
 
@@ -125,12 +116,7 @@ function Contact() {
                 >
                     Submit
                 </button>
-
-
-
             </form>
-
-
         </div>
     );
 }
