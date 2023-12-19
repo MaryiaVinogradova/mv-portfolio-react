@@ -81,13 +81,6 @@ function Resume() {
            <div class="container">   
            <div id="center">
     
-            <div className="btn btn-primary" id="download">
-                <p> 
-                    <a id="resume-link" href="https://github.com/Maryia Vinogradova_Full-stack_Jr_2022.pdf" download="Maryia Vinogradova">
-                    Download Resume
-                </a>
-                </p>
-            </div>
             </div>
             </div>
         </div>
