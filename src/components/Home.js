@@ -1,251 +1,275 @@
 import React from 'react';
 import '../styles/bio.css';
 
-import { useState, useEffect } from 'react';
 import '../styles/Contact.css';
-import { validateEmail } from '../utils/validateEmail'
+import Contact from './Contact';
+import Header from './Header';
+import Portfolio from './Portfolio';
+import Footer from './Footer'
 
-const cardStyle = {
-    cardIcon: {
-        color: '#8e979b',
-        textAlign: 'center',
-        padding: 0,
-        margin: 10,
-        alignItems: 'top',
-    }
+import { FaJava, FaCss3, FaReact, FaHtml5, FaRegSun } from "react-icons/fa";
+
+import { SiWebpack } from "react-icons/si";
+import { BsDot } from "react-icons/bs"
+
+
+function Bio() {
+
+
+    return (
+    <div class="full-height">
+
+      <div className="sidebar">
+
+        <li class="b-nav-item ">
+         <a 
+          href="#me" id="style"
+          >About Me</a>
+        </li>
+
+        <li class="b-nav-item ">
+          <a 
+           href="#skills" id="style"
+           >Skills</a>
+        </li>
+
+        <li class="b-nav-item ">
+          <a 
+           href="#work" id="style"
+           >Work</a>
+        </li>
+
+        <li class="b-nav-item ">
+         <a 
+           href="#school" id="style"
+           >Education</a>
+        </li>
+
+        <li class="b-nav-item ">
+         <a 
+           href="#contact" id="style"
+           >Contact Me</a>
+        </li>
+
+      </div>
+  
+      <div className="container d-flex p-0 justify-content-center">
+        <div clasName="col-3 m-0 p-0" id='text-center'>
+            <ul className="p-for-about-me text-center"> 
+              <li id="hello">Hi, I'm</li>
+              <li id="maryia">MARYIA </li>
+              <li id="hello-sm">Full-Stack</li>
+              <li id="hello-sm">Software Developer</li>
+            </ul> 
+        </div>
+               
+        <div className='col-9'>
+          <Header></Header>
+          <br></br>
+
+             <img id="image" alt="my portrait" src="https://github.com/MaryiaVinogradova/mv-portfolio-react/blob/main/src/images/Vinogradova_Maryia-52.jpg?raw=true"/> 
+        </div>
+      </div>
+      <br></br>
+
+      <div className='row' id="about-pd-10">
+         <div className='col-3' id="about">
+            <div id="me">
+              ABOUT ME
+            </div>
+          </div>
+
+          <div className='col-2' id="icon-small">
+            <img id="icon-side" alt="icon" src="https://github.com/MaryiaVinogradova/mv-portfolio-react/blob/main/src/images/1.1.jpeg?raw=true"></img>
+          </div>
+
+          <div className='col-7'>
+          Motivated software developer with an extensive background in Building Architecture and Design, recently graduated from the University of Denver Full-Stack Coding Bootcamp. Creative problem solver with strong design, communication, and project management skills, looking for an opportunity to implement, advance, and expand my newly acquired technical skill set, working on challenging and fulfilling projects.
+          </div>
+      </div>
+               
+
+      <div className='row d-flex' id="skills">
+        <div className='row gx-0' id="skills-head">
+
+         <div className='col-3'>
+         <div id="about">
+            SKILLS
+          </div>
+         </div>
+         
+
+          <div className='col-3' id="head-skills">
+            LANGUAGES:
+          </div>
+         <div className='col-3' id="head-skills">
+            TECHNOLOGIES:
+         </div>
+         <div className='col-3' id="head-skills">
+          <li id="color">CONCEPTS</li>
+          <li id="color">&DATA:</li>
+         </div>
+
+        </div>
+
+        <div className='row p-0 g-0'>
+
+         <div className='col-3 p-0' id="skills">
+          <div id="about">
+            
+          </div>
+         </div>
+
+         <div className='col-3 p-0' id="lang">
+          <li>
+            JavaScript <FaJava></FaJava>
+          </li> 
+          <li>
+            CSS <FaCss3></FaCss3>
+          </li> 
+          <li>
+            REACT <FaReact></FaReact>
+          </li>
+          <li>
+            HTML <FaHtml5></FaHtml5>
+          </li>
+          <li>
+            JSX <FaReact></FaReact>
+          </li>
+          <li>
+            MVC <FaRegSun></FaRegSun>
+          </li>
+          <li>
+            Webpack <SiWebpack></SiWebpack>
+          </li>
+                  
+         </div>
+
+         <div className='col-3 p-0' id="tech">
+          <li>
+            Mongoose <BsDot></BsDot>
+          </li > 
+          <li>
+            Express <BsDot></BsDot>
+          </li> 
+          <li>
+            MySql <BsDot></BsDot>
+          </li>
+          <li>
+            MongoDB <BsDot></BsDot>
+          </li>
+          <li>
+            Compass <BsDot></BsDot>
+          </li>
+          <li>
+            Heroku <BsDot></BsDot>
+          </li>
+          <li>
+            LightHouse <BsDot></BsDot>
+          </li>
+          <li>
+            VS Code <BsDot></BsDot>
+          </li>
+          <li>
+            MERN Stack <BsDot></BsDot>
+          </li>
+          <li>
+            GraphQL <BsDot></BsDot>
+          </li>
+          <li>
+            Apollo <BsDot></BsDot>
+          </li>        
+         </div>
+
+         <div className='col-3 p-0' id="concepts">
+          <li>
+            JSON <BsDot></BsDot>
+          </li> 
+          <li>
+            OOP <BsDot></BsDot>
+          </li> 
+          <li>
+            API <BsDot></BsDot>
+          </li>
+          <li>
+            RESTful web services <BsDot></BsDot>
+          </li>
+          <li>
+            CRUD <BsDot></BsDot>
+          </li>
+          <li>
+            Webpack <BsDot></BsDot>
+          </li>
+          <li>
+            PWA <BsDot></BsDot>
+          </li>
+         </div>
+        </div>    
+      </div>
+
+      <div className='row pd-10' id="about about-pd-10">
+         <div className='col-3' id="about">
+            <div id="work">
+              WORK <br></br>SAMPLES
+            </div>
+          </div>
+
+          <div className='col-2' id="icon-small">
+            <img id="icon-side" alt="icon" src="https://github.com/MaryiaVinogradova/mv-portfolio-react/blob/main/src/images/3.3.jpeg?raw=true"></img>
+          </div>
+
+          <div className='col-7'>
+          <Portfolio></Portfolio>
+          </div>
+      </div>
+
+      <div className='row pd-10' id="education about-pd-10">
+         <div className='col-3' id="school">
+              EDUCATION
+          </div>
+
+          <div className='col-2' id="icon-small">
+            <img id="icon-side" alt="icon" src="https://github.com/MaryiaVinogradova/mv-portfolio-react/blob/main/src/images/4.4.jpeg?raw=true"></img>
+          </div>
+
+          <div className='col-7 p-0'>
+            <li>
+              DU Bootcamp 
+              - 2021-2022
+            </li>
+            <li>
+              BNTU 
+              - Master Degree in Architecture 2008-2014
+            </li>
+          </div>
+          
+      </div>
+
+      <div className='row pd-10' id="education about-pd-10">
+         <div className='col-3' id="about">
+              CONTACT
+          </div>
+
+          <div className='col-2' id="icon-small">
+          </div>
+
+          <div className='col-7 p-0'>
+          <Contact></Contact>
+          </div>
+      
+      </div>
+    </div>
+    )
 
 }
 
-function Bio() {
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [message, setMessage] = useState('')
-
-    const [validEmail, setValidEmail] = useState(false);
-
-    const handleInputChange = (e) => {
-        const { target } = e;
-        const inputType = target.name;
-        const inputValue = target.value;
-
-        if (inputType === 'name') {
-            setName(inputValue);
-        } else if (inputType === 'email') {
-            setEmail(inputValue);
-            if (validateEmail(inputValue)) {
-                setValidEmail(true)
-            } else {
-                setValidEmail(false)
-            }
-
-
-        } else {
-            setMessage(inputValue)
-        }
-    };
+export default Bio;
 
 
 
-    const handleFormSubmit = (e) => {
-        e.preventDefault();
-
-        console.log("submited.....");
-
-        setName("")
-        setEmail("")
-        setMessage("")
-
-    };
-
-
-    const renderMessage = () => {
-
-        if (name !== "" && !validEmail && message) {
-            return <div id="alert-message">Please enter a valid email</div>
-        } else if (name !== "" && validEmail && message === "") {
-            return <div id="alert-message">Please enter a valid message</div>
-        } else {
-            <div id="alert-message"></div>
-        }
-
-
-    };
-
-    return (
-        <div class="full-height">
-         <div id="bio" className="container">
-
-            <img id="image" alt="my portrait" src="https://github.com/MaryiaVinogradova/Portfolio-react/blob/main/src/images/Vinogradova_Maryia-52.jpg?raw=true" />
-
-            <div className="main-content-div">
-                <p className="p-for-about-me">I am an architect with more than 8 years of experience. Looking for a new opportunity in IT as full-stack developper. 
-             
-                </p>
-            </div>
-         </div>
-
-         <div class="container" id="portfolio">
-      <div class="row">
-        <div class="col-lg-5 col-sm-6 col-md-6" id="top">
-            <div class="card h-100">
-
-            <div class="row ">
-                <img id="card-img" alt="my portrait" src="https://github.com/MaryiaVinogradova/Portfolio/blob/main/src/images/1.png?raw=true" />
-            </div>
-            
-           <div class="card-body">
-            <div class="card-header d-flex align-items-center justify-content-center text-center">Note Tracker</div>
-            <div>
-            This is simple note taker for small business or any person. Easy to use. Just add your note and see it in chart on the left. You can add anything or delete/ change any notes. Simple interface helps.
-            </div>
-           </div>
-
-            <div class="card-footer text-white text-center">
-            <a style={cardStyle.cardIcon} className="link" href="https://note-tracker-app-mv.herokuapp.com/" target="_blank "><i className="bi bi-github" id="cardIcon"></i></a>
-            </div>
-            </div>
-
-        </div>
-
-        <div class="col-lg-5 col-sm-6 col-md-6" id="top">
-        <div class="card h-100">
-
-            <div class="row">
-                <img id="card-img" alt="my portrait" src="https://github.com/MaryiaVinogradova/Portfolio/blob/main/src/images/2.png?raw=true" />
-                
-            </div>
-
-           <div class="card-body">
-            <div class="card-header d-flex align-items-center justify-content-center text-center">Weather Dashboard</div>
-            <div>
-            Develop APP weather-checker. Target was to set list of researhed cities in storage, Set the 5 days of weather for current city and show in header current parameters for this city with icons, color indecator for UV factor. Using API's, grid templates.
-            </div>
-           </div>
-
-            <div class="card-footer text-white text-center">
-            <a style={cardStyle.cardIcon} className="link " href="https://github.com/MaryiaVinogradova/Weather-dashboard.git" target="_blank "><i className="bi bi-github" id="cardIcon"></i></a>
-            </div>
-            </div>
-
-        </div>
-
-        <div class="col-lg-5 col-sm-6 col-md-6" id="top">
-        <div class="card h-100">
-
-            <div class="row">
-                <img id="card-img" alt="my portrait" src="https://github.com/MaryiaVinogradova/Portfolio/blob/main/src/images/3.png?raw=true" />  
-            </div>
-
-           <div class="card-body">
-            <div class="card-header d-flex align-items-center justify-content-center text-center">E-Commerce-Back-End</div>
-            <div>
-            This is DataBase usage example. How to interract with your database use GET, POST, PUT, DELETE - using routs to whole base or get information by ID. In this example Insomnia was used.
-            </div>
-           </div>
-
-            <div class="card-footer text-white text-center">
-            <a style={cardStyle.cardIcon} className="link " href="https://github.com/MaryiaVinogradova/E-Commerce-Back-End.git" target="_blank "><i className="bi bi-github" id="cardIcon"></i></a>
-            </div>
-            </div>
-
-        </div>
-
-        <div class="col-lg-5 col-sm-6 col-md-6" id="top">
-        <div class="card h-100">
-
-            <div class="row">
-                <img id="card-img" alt="my portrait" src="https://github.com/MaryiaVinogradova/Portfolio/blob/main/src/images/4.png?raw=true" />
-                
-            </div>
- 
-           <div class="card-body">
-            <div class="card-header d-flex align-items-center justify-content-center text-center">Social-Network-API-NoSql</div>
-            <div>
-            This assigment shows how to use API with MongoBD and Mongoose.
-            </div>
-           </div>
-
-            <div class="card-footer text-white text-center">
-            <a style={cardStyle.cardIcon} className="link " href="https://github.com/MaryiaVinogradova/Social-Network-API-NoSQL.git" target="_blank "><i className="bi bi-github" id="cardIcon"></i></a>
-            </div>
-        </div>
-        </div>
-
-       </div> 
-
-    </div>
-
-    <div id="contact" className="container">
-
-
-            <form>
-                <h2>Contact</h2>
-                
-             <div class="form-container">
-
-                <div className="form-holder">
-                    <label htmlFor="name">Name:</label>
-                    <br></br>
-                    <input
-                        className="form-values"
-                        value={name}
-                        name="name"
-                        onChange={handleInputChange}
-                        type="text"
-                        placeholder="name"
-                        id="name"
-                    />
-                </div>
-
-                <div className="form-holder">
-                    <label htmlFor="email">Email address:</label>
-                    <br></br>
-                    <input
-                        className="form-values"
-                        value={email}
-                        name="email"
-                        onChange={handleInputChange}
-                        type="email"
-                        placeholder="Email address"
-                        id="email"
-                    />
-
-                </div>
-
-                <div className="form-holder">
-                    <label htmlFor="message">Message:</label>
-                    <br></br>
-                    <textarea
-                        className="form-values"
-                        value={message}
-                        name="message"
-                        onChange={handleInputChange}
-                        type="text"
-                        rows="6"
-                        id="message"
-                    />
-                </div>
-             </div>
-             
-                {renderMessage()}
-                <button
-                    onClick={handleFormSubmit}
-                    className="btn btn-primary"
-                    type="submit"
-                    id="submit"
-                >
-                    Submit
-                </button>
 
 
 
-            </form>
-
-
-        </div>
-
-        </div>
-    )
 
 }
 
