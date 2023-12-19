@@ -1,22 +1,33 @@
 .form-container{
-  justify-content: space-around;
+  justify-content: center;
   display:block;
 
 }
 
 .form-values {
-  width: 75%;
+  width: 100%;
+
 }
 
 .form-holder{
   justify-content: space-around;
   display: block;
+  width: 100%;
+
+}
+
+#pd-0{
+  padding-right: 0;
+  margin-right: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
 
 label,
 #alert-message {
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 2.5vw;
 }
 
 #submit{
@@ -24,8 +35,7 @@ background-color: rgb(142, 151, 155);
 border: 0;
 }
 
-#contact {
-  /* background: linear-gradient(90deg, rgb(197 241 247) 70%, rgb(255, 255, 255) 100%); */
-  max-width: 75%;
-  padding: 20px;
+#contact{
+  max-width: 100%;
+
 }

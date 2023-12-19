@@ -46,11 +46,6 @@ h3{
   color: rgb(255, 255, 255);
 }
 
-#download{
-  background-color: rgb(142, 151, 155);
-  border: 0;
-}
-
 #center{
   display: flex;
   flex-wrap: wrap;
@@ -58,15 +53,8 @@ h3{
   align-items: center;
 }
 
-#resume {row {
-    --bs-gutter-x: 1.5rem;
-    --bs-gutter-y: 0;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: calc(-1 * var(--bs-gutter-y));
-    margin-right: calc(-.5 * var(--bs-gutter-x));
-    margin-left: calc(-.5 * var(--bs-gutter-x));
-}
+#resume {
+  background: linear-gradient(90deg, rgb(197 241 247) 70%, rgb(255, 255, 255) 100%);
   max-width: 75%;
   padding: 20px;
 }

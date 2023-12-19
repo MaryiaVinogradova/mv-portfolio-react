@@ -13,10 +13,18 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  max-width: 75%;
   margin-right: 0;
+  padding-bottom: 5rem;
+}
+
+.a{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin: 0;
   padding: 0;
 }
+
 
 @media(min-width: 972px){
 
