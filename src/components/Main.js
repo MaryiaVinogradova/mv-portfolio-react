@@ -1,8 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import Header from './Header';
 import Home from './Home';
-// import Portfolio from './Portfolio';
 import Resume from './Resume';
 import Footer from './Footer';
 
@@ -16,8 +14,6 @@ const Main = () => {
     setContent(content)
   }
 
-  const [hoverActive, setHoverActive] = useState(10)
-
   const renderSection = () => {
     if (content === "Home") {
       return <Home />
@@ -29,9 +25,6 @@ const Main = () => {
 
   return (
     <>
-      <Header
-        currentPage={content} changeFunction={handleChange}
-      />
       {renderSection()}
       <Footer />
     </>
