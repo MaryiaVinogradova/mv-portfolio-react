@@ -16,7 +16,7 @@ const cardStyle = {
 
 }
 
-function bio() {
+function Bio() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('')
@@ -249,6 +249,6 @@ function bio() {
 
 }
 
-export default bio;
+export default Bio;
 
 
